@@ -440,7 +440,7 @@
 
 - (CGFloat)minVerticalBound
 {
-    return MIN(_min, 0);
+    return _min;
 }
 
 - (CGFloat)maxVerticalBound
