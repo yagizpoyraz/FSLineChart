@@ -463,7 +463,7 @@
     }
     
     // The idea is to adjust the minimun and the maximum value to display the whole chart in the view, and if possible with nice "round" steps.
-    _max = [self getUpperRoundNumber:_max forGridStep:_verticalGridStep];
+    // _max = [self getUpperRoundNumber:_max forGridStep:_verticalGridStep];
     
     if(_min < 0) {
         // If the minimum is negative then we want to have one of the step to be zero so that the chart is displayed nicely and more comprehensively
