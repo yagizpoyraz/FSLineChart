@@ -462,6 +462,7 @@
             _max = [number floatValue];
     }
     
+    _max *= 1.001f;
     // The idea is to adjust the minimun and the maximum value to display the whole chart in the view, and if possible with nice "round" steps.
     // _max = [self getUpperRoundNumber:_max forGridStep:_verticalGridStep];
     
