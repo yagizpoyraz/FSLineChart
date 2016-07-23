@@ -445,7 +445,7 @@
 
 - (CGFloat)maxVerticalBound
 {
-    return MAX(_max, 0);
+    return MAX(_max, 0) ;
 }
 
 - (void)computeBounds
@@ -605,7 +605,8 @@
             controlPoint[1].x = p.x - m.x * _bezierSmoothingTension;
             controlPoint[1].y = p.y - m.y * _bezierSmoothingTension;
             
-            [path addCurveToPoint:p controlPoint1:controlPoint[0] controlPoint2:controlPoint[1]];
+            [path addLineToPoint:p];
+            //   [path addCurveToPoint:p controlPoint1:controlPoint[0] controlPoint2:controlPoint[1]];
         }
         
     } else {
